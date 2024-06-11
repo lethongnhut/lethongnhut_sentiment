@@ -148,7 +148,7 @@ choice = st.sidebar.selectbox('Menu', menu)
 #----------------------------------------------------------------------------------------------------
 if choice == 'Tổng quan':
 #----------------------------------------------------------------------------------------------------
-    st.subheader('1.Tổng quan')
+    st.subheader('Tổng quan')
     # st.write('''**Yêu cầu** :
     st.write('''
     - ShopeeFood là một kênh phối hợp với các nhà hàng/quán ăn kinh doanh thực phẩm online.
@@ -203,11 +203,11 @@ if choice == 'Tổng quan':
     st.write('''**Bước 6: Deployment & Feedback/ Act**''')
     st.write('''Đưa ra những cải tiến phù hợp để nâng cao sự hài lòng của khách hàng, thu hút sự chú ý của khách hàng mới''')
     
-    st.subheader('2.Giáo viên hướng dẫn')
+    st.subheader('Giáo viên hướng dẫn')
     st.write('''
     **Cô : Khuất Thùy Phương**
     ''')
-    st.subheader('3.Học viên thực hiện')
+    st.subheader('Học viên thực hiện')
     st.write('''
     **HV : Lê Thống Nhứt & Nguyễn Thị Tường Vy**
     ''')
