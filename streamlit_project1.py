@@ -150,6 +150,7 @@ if choice == 'Tổng quan':
 #----------------------------------------------------------------------------------------------------
     st.subheader('1.Tổng quan')
     # st.write('''**Yêu cầu** :
+    st.write('''
     - ShopeeFood là một kênh phối hợp với các nhà hàng/quán ăn kinh doanh thực phẩm online.
     - Từ những đánh giá của khách hàng, vấn đề được đưa ra là làm sao để các nhà hàng/ quán ăn hiểu được khách hàng rõ hơn, biết họ đánh giá về mình như thế nào để cải thiện hơn trong dịch vụ/ sản phẩm
     Đánh giá và nhận xét do người mua cho một sản phẩm là một thông tin quan trọng đối với đối tác thương mại điện tử lớn như Shopee. Những đánh giá sản phẩm này giúp người bán hiểu nhu cầu của khách hàng và nhanh chóng điều chỉnh các dịch vụ của mình để mang lại trải nghiệm tốt hơn cho khách hàng trong đơn hàng tiếp theo
