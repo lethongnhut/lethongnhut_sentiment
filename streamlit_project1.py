@@ -203,21 +203,6 @@ if choice == 'Tổng quan':
     st.write('''**Bước 6: Deployment & Feedback/ Act**''')
     st.write('''Đưa ra những cải tiến phù hợp để nâng cao sự hài lòng của khách hàng, thu hút sự chú ý của khách hàng mới''')
     
-    st.write('''
-    Đây là dự án về phân tích cảm xúc của các bình luận của người Việt trên ShopeeFoof.
-    Bộ dữ liệu được thu thập từ trang web ShopeeFood (Do Cô Giáo viên).
-    ''')
-    st.write('''
-    Bộ dữ liệu có 2 lớp: Tích cực và tiêu cực. 
-    ''')
-    st.write('''
-    Mô hình được xây dựng với Logistic Regression và sử dụng oversampling data:
-    - Mô hình có độ chính xác xx% ( Accuracy ).
-    - Mô hình có độ chính xác xx% ( precision ) cho lớp tích cực ( positive class ).
-    - Mô hình có độ chính xác xx% ( recall ) cho lớp tích cực ( positive class ).
-    - Mô hình có độ chính xác xx% ( precision ) cho lớp tiêu cực ( negative class ).
-    - Mô hình có độ chính xác xx% ( recall ) cho lớp tiêu cực ( negative class ). 
-    ''')
     st.subheader('2.Giáo viên hướng dẫn')
     st.write('''
     **Cô : Khuất Thùy Phương**
