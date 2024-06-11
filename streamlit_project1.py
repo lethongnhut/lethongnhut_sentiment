@@ -220,7 +220,7 @@ if choice == 'Tổng quan':
     ''')
     st.subheader('3.Học viên thực hiện')
     st.write('''
-    **HV : LÊ THỒNG NHỨT & NGUYỄN THỊ TƯỜNG VY**
+    **HV : Lê Thống Nhứt & Nguyễn Thị Tường Vy**
     ''')
 #----------------------------------------------------------------------------------------------------
 elif choice == 'Xây dựng mô hình':
