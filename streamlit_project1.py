@@ -137,12 +137,12 @@ def text_transform(comment):
 st.image('download.jpg')
 
 st.title("Trung tâm tin học - ĐH KHTN")
-st.header('Data Science and Machine Learning Certificate')
-st.subheader('Sentiment analysis of Vietnamese comments on Shopee')
+st.header('Data Science')
+st.subheader('Sentiment Analysis on ShopeeFood')
 
 # st.video('https://www.youtube.com/watch?v=q3nSSZNOg38&list=PLFTWPHJsZXVVnckL0b3DYmHjjPiRB5mqX')
 
-menu = ['Tổng quan', 'Xây dựng mô hình', 'Dự đoán mới']
+menu = ['Tổng quan', 'Xây dựng mô hình', 'Dự đoán']
 choice = st.sidebar.selectbox('Menu', menu)
 
 #----------------------------------------------------------------------------------------------------
@@ -200,24 +200,19 @@ if choice == 'Tổng quan':
     st.write('''Đưa ra những cải tiến phù hợp để nâng cao sự hài lòng của khách hàng, thu hút sự chú ý của khách hàng mới''')
     
     st.write('''
-    Đây là dự án về phân tích cảm xúc của các bình luận của người Việt trên Shopee.
-    Bộ dữ liệu được thu thập từ trang web Shopee (Do Cô cung cấp).
-    Tập dữ liệu chứa 2 cột: xếp hạng và bình luận.
-    Thang đánh giá là từ 1 đến 5.
-    Cột Comment là nhận xét của khách hàng sau khi họ mua hàng trên Shopee.
-    Mục tiêu của dự án này là xây dựng một mô hình để dự đoán cảm xúc của các bình luận.
-    Cảm xúc tích cực hay tiêu cực.
+    Đây là dự án về phân tích cảm xúc của các bình luận của người Việt trên ShopeeFoof.
+    Bộ dữ liệu được thu thập từ trang web ShopeeFood (Do Cô Giáo viên).
     ''')
     st.write('''
     Bộ dữ liệu có 2 lớp: Tích cực và tiêu cực. 
     ''')
     st.write('''
     Mô hình được xây dựng với Logistic Regression và sử dụng oversampling data:
-    - Mô hình có độ chính xác 87% ( Accuracy ).
-    - Mô hình có độ chính xác 94% ( precision ) cho lớp tích cực ( positive class ).
-    - Mô hình có độ chính xác 85% ( recall ) cho lớp tích cực ( positive class ).
-    - Mô hình có độ chính xác 71% ( precision ) cho lớp tiêu cực ( negative class ).
-    - Mô hình có độ chính xác 87% ( recall ) cho lớp tiêu cực ( negative class ). 
+    - Mô hình có độ chính xác xx% ( Accuracy ).
+    - Mô hình có độ chính xác xx% ( precision ) cho lớp tích cực ( positive class ).
+    - Mô hình có độ chính xác xx% ( recall ) cho lớp tích cực ( positive class ).
+    - Mô hình có độ chính xác xx% ( precision ) cho lớp tiêu cực ( negative class ).
+    - Mô hình có độ chính xác xx% ( recall ) cho lớp tiêu cực ( negative class ). 
     ''')
     st.subheader('2.Giáo viên hướng dẫn')
     st.write('''
@@ -305,7 +300,7 @@ elif choice == 'Dự đoán mới':
 #----------------------------------------------------------------------------------------------------
     st.subheader('Dự đoán mới')
     st.write('''
-    Nhập vào một bình luận và mô hình sẽ dự đoán tình cảm của bình luận. 
+    Nhập vào một bình luận và mô hình sẽ dự đoán. 
     ''')
     # menu = ["Nhập bình luận", "Tải tệp Excel", "Tải tệp CSV", "Bình luận bằng giọng nói", "Nói chuyện với chatGPT"]
     # menu = ["Nhập bình luận", "Tải tệp Excel", "Tải tệp CSV"]
@@ -515,45 +510,3 @@ elif choice == 'Dự đoán mới':
 
             else:
                 st.warning("Hãy tải lên một tệp âm thanh để chuyển đổi")
-#---------------------------------------------------------------------------------------------
-    # elif choice == "Bình luận bằng giọng nói" :
-    #     st.write('Bạn chọn Bình luận bằng giọng nói')
-    #     # Lấy danh sách các thiết bị đầu vào âm thanh
-
-    #     while True: 
-    #         # try:
-    #         #     text = nhan_text()
-    #         # except:
-    #         #     text = ""
-
-    #         text = nhan_text()
-
-    #         if text == "":
-    #             voice = "bạn muốn nói gì với tôi"
-    #             st.write(voice)
-    #             # text_to_speech(voice)
-    #         elif "tên gì" in text:
-    #             voice = "tôi tên là trợ lý ảo"
-    #             st.write(voice)
-    #             # text_to_speech(voice)
-    #         elif "là ai" in text:
-    #             voice = "tôi là trợ lý ảo của anh Phong"
-    #             st.write(voice)
-    #             # text_to_speech(voice)
-    #         elif "bye" in text or "thoát" in text or "dừng" in text or "tạm biệt" in text or "tạm dừng" in text or "ngủ thôi" in text:
-    #             st.write('Hẹn gặp lại bạn sau')
-    #             # dung()
-    #             break
-    #         else:
-    #             st.write('Câu bình luận của bạn :'+text)
-    #             text = text_transform(text)
-    #             text = cv.transform([text])
-    #             y_predict = model.predict(text)
-
-    #             if y_predict[0] == 1:
-    #                 sentiment = 'Tình cảm của bình luận là tích cực'
-    #                 st.write(sentiment)
-    #             else:
-    #                 sentiment = 'Tình cảm của bình luận là tiêu cực'
-    #                 st.write(sentiment)
-    #                 # text_to_speech(sentiment)
