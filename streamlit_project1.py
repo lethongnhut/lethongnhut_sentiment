@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------------------------------------
 #### HV : LÊ THỐNG NHỨT & NGUYỄN THỊ TƯỜNG VY
-#### ĐỒ ÁN TỐT NGHIỆP : Project  ...
+#### ĐỒ ÁN TỐT NGHIỆP : Project 3
 #----------------------------------------------------------------------------------------------------
 # import libraries
 import numpy as np
@@ -149,7 +149,7 @@ choice = st.sidebar.selectbox('Menu', menu)
 if choice == 'Tổng quan':
 #----------------------------------------------------------------------------------------------------
     st.subheader('1.Tổng quan')
-    st.write('''**Yêu cầu** : Xây dựng hệ thống hỗ trợ phân loại các phản hồi của khách hàng thành các nhóm : tích cực, tiêu cực trung tính dựa trên dữ liệu dạng văn bản.
+    st.write('''**Yêu cầu** : Dựa trên lịch sử những đánh giá của khách hàng đã có trước đó. Dữ liệu được thu thập từ phần bình luận và đánh giá của khách hàng ở ShopeeFood. Xây dựng mô hình dự đoán giúp nhà hàng/ quán ăn có thể biết được những phản hồi nhanh chóng của khách hàng về sản phẩm hay dịch vụ của họ (tích cực, tiêu cực hay trung tính), điều này giúp cho nhà hàng hiểu được tình hình kinh doanh, hiểu được ý kiến của khách hàng từ đó giúp nhà hàng cải thiện hơn trong dịch vụ, sản phẩm.
     ''')
     st.write('''**Mục tiêu/ Vấn đề** : Xây dựng mô hình dự đoán giúp người bán hàng có thể biết được những phản hồi nhanh chóng của khách hàng về sản phẩm hay dịch vụ của họ ( tích cực, tiêu cực hay trung tính ), điều này giúp cho người bán biết được tình hình kinh doanh, hiểu được ý kiến của khách hàng từ đó giúp họ cải thiện hơn trong dịch vụ, sản phẩm.
     ''')
